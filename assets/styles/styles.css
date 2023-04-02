@@ -19,6 +19,7 @@
     float: right;
     background-color: #EFB16A;
     border: none;
+    cursor: pointer;
 }
 #task {
     width: 500px;
@@ -29,6 +30,7 @@
     height:40px;
     background-color: #EFB16A;
     border: none;
+    cursor: pointer;
 }
 #btn_right{
     width: 50%;
