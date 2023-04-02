@@ -7,7 +7,7 @@ const msgNoTask = document.getElementById("notasks-msg");
 
  btnSubmit.addEventListener('click', function (event) {
    event.preventDefault();
-   msgNoTask.innerHTML = '';
+   msgNoTask.textContent ='';
    btnDelete.removeAttribute("disabled")
    const taskList = document.getElementById('task').value;
    const commentElem = document.createElement('div');
@@ -26,6 +26,9 @@ const msgNoTask = document.getElementById("notasks-msg");
 
 btnDelete.addEventListener('click', function (event) {
  event.preventDefault();
- commentsDiv.innerHTML = '';
- msgNoTask.innerHTML = '';
+ commentsDiv.textContent = '';
+ btnDelete.setAttribute("disabled", true);
+ commentsDiv.innerHTML = `
+ <p id="notasks-msg">No tasks</p>
+`;
 });
