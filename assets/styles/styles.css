@@ -18,6 +18,7 @@
     margin-bottom: 50px;
     float: right;
     background-color: #EFB16A;
+    border: none;
 }
 #task {
     width: 500px;
@@ -27,6 +28,7 @@
     width:120px;
     height:40px;
     background-color: #EFB16A;
+    border: none;
 }
 #btn_right{
     width: 50%;
