@@ -3,10 +3,11 @@ const commentsDiv = document.getElementById("show__tasks");
 const btnSubmit = document.getElementById("submit");
 const btnDelete = document.getElementById("delete");
 btnDelete.setAttribute("disabled", true);
-const msgNoTask = document.getElementById("notasks-msg");
+
 
  btnSubmit.addEventListener('click', function (event) {
    event.preventDefault();
+   const msgNoTask = document.getElementById("notasks-msg");
    msgNoTask.textContent ='';
    btnDelete.removeAttribute("disabled")
    const taskList = document.getElementById('task').value;
@@ -22,6 +23,7 @@ const msgNoTask = document.getElementById("notasks-msg");
  commentElem.appendChild(checkbox);
  commentsDiv.appendChild(commentElem);
  document.getElementById('task').value = '';
+
 });
 
 btnDelete.addEventListener('click', function (event) {
